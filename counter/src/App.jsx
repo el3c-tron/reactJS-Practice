@@ -6,11 +6,15 @@ function App() {
   let [value, setValue] = useState(0);
   
   const addValue = () => {
-    setValue(value+1);
+
+    if(value === 20) setValue(value);
+    else setValue(value+1);
   }
 
   const subValue = () => {
-    setValue(value-1);
+
+    if(value === 0) setValue(value);
+    else  setValue(value-1);
   }
 
   return (
