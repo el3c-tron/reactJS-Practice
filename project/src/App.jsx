@@ -1,5 +1,5 @@
-import { useState } from "react";
 import BackgroundColor from "./components/BackgroundColor.jsx";
+import CurrencyConverter from "./components/CurrencyConverter.jsx";
 import RandomPasswordGenerator from "./components/RandomPasswordGenerator.jsx";
 
 
@@ -11,6 +11,7 @@ function App() {
         
         <BackgroundColor/>
         <RandomPasswordGenerator />
+        <CurrencyConverter />
 
       </div>
       

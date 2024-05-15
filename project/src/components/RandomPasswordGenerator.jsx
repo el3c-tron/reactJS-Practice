@@ -21,7 +21,6 @@ function RandomPasswordGenerator() {
     for(let i=0;i<length;i++) {
 
       let index = (Math.floor(Math.random() * randomStr.length));
-      console.log(index);
       randomPassword += randomStr[index];
 
     }
@@ -45,30 +44,30 @@ function RandomPasswordGenerator() {
 
 
   return (
-    <div className=' h-auto w-full max-w-[40rem] flex flex-col justify-center items-center p-4 mt-6 rounded-lg shadow-[0px_0px_15px_5px_rgba(0,0,0,0.2)]'>
+    <div className=' h-auto max-w-[40rem] flex flex-col justify-center items-center p-4 mt-10 rounded-lg shadow-[0px_0px_15px_5px_rgba(0,0,0,0.2)]'>
 
         <p className='font-semibold text-lg'>Random Password Generator</p>
           
         <div className='flex flex-row p-2 mt-4'>
             <input value={password} readOnly className='w-[300px] rounded-md p-2 outline-none shadow-[0px_0px_10px_5px_rgba(0,0,0,0.1)]' type='text' placeholder='Password'/>
-            <button onClick={handleCopyButton} className='w-[100px] rounded-md text-white pl-2 pr-2 font-semibold bg-blue-600 hover:bg-blue-500 transition-all duration-400 shadow-[0px_0px_10px_5px_rgba(0,0,0,0.1)]'>{copyState}</button>
+            <button onClick={handleCopyButton} className='w-[100px] ml-4 rounded-md text-white pl-2 pr-2 font-semibold bg-blue-600 hover:bg-blue-500 transition-all duration-400 shadow-[0px_0px_10px_5px_rgba(0,0,0,0.1)]'>{copyState}</button>
         </div>
 
         <div className='flex flex-row pl-2 mt-3'>
           
           <div className='flex items-center'>
             <input type='range' min={6} max={20} className='cursor-pointer' value={length} onChange={(e)=>setLength(e.target.value)}/>
-            <label className='ml-2 font-semibold'> {length} </label>
+            <label className='ml-2'> {length} </label>
           </div>
 
           <div className='flex items-center'>
             <input type='checkbox' className='ml-7' checked={numberAllowed} onChange={() => {setNumberAllowed((previousState) => !previousState)}}/>
-            <label className='ml-2 font-semibold'>Numbers</label>
+            <label className='ml-2'>Numbers</label>
           </div>
 
           <div className='flex items-center'>
             <input type='checkbox' className='ml-5' checked={specialCharAllowed} onChange={() => {setSpecialCharAllowed((previousState) => !previousState)}} />
-            <label className='ml-2 font-semibold'>Sp. Characters</label>
+            <label className='ml-2'>Sp. Characters</label>
           </div>
 
         </div>
