@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center items-center w-auto h-auto p-2 flex-col">
+      <div className="flex justify-center items-center w-auto h-auto p-2 flex-col ">
         
         <BackgroundColor/>
         <RandomPasswordGenerator />

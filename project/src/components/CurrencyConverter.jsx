@@ -41,8 +41,8 @@ function CurrencyConverter() {
                         <InputField 
                             amount = {amount}
                             currency = {from}
-                            onAmountChange = { (amount) => setAmount(amount) }
-                            onCurrencyChange = {(currency) => setFrom(currency)}
+                            onAmountChange = { (currentAmount) => setAmount(currentAmount) }
+                            onCurrencyChange = {(currentCurrency) => setFrom(currentCurrency)}
                             currencyOptions = {options}
                         />
 
