@@ -32,7 +32,7 @@ function CurrencyConverter() {
         <>
 
             <div className='flex justify-center items-center flex-col mt-10 p-2 w-auto h-auto '>
-                <div className='flex rounded-lg justify-center items-center flex-col p-4 w-auto h-auto shadow-[0px_0px_15px_5px_rgba(0,0,0,0.2)]'>
+                <div className='flex rounded-lg justify-center items-center flex-col p-4 w-auto h-auto shadow-[0px_0px_15px_5px_rgba(0,0,0,0.2)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.1)]'>
                     
                     <p className='font-semibold text-lg'>Currency Converter</p>
                     
@@ -56,8 +56,8 @@ function CurrencyConverter() {
                     </div>
 
                     <div className='flex w-full h-auto box-border'>
-                        <button onClick={convert} className='shadow-[0px_0px_10px_5px_rgba(0,0,0,0.1)] bg-blue-600 text-white mt-2 p-2 w-[500px] rounded-md font-semibold hover:bg-blue-500 transition-all ease-in-out duration-300' >Convert</button>
-                        <button onClick={swap} className='shadow-[0px_0px_10px_5px_rgba(0,0,0,0.1)] bg-white text-blue-600 hover:text-blue-500 box-border mt-2 ml-[10px] p-2 w-[130px] rounded-md font-semibold  transition-all ease-in-out duration-500' >Swap</button>
+                        <button onClick={convert} className='shadow-[0px_0px_10px_5px_rgba(0,0,0,0.1)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.1)] bg-blue-600 text-white mt-2 p-2 w-[500px] rounded-md font-semibold hover:bg-blue-500 transition-all ease-in-out duration-300' >Convert</button>
+                        <button onClick={swap} className='shadow-[0px_0px_10px_5px_rgba(0,0,0,0.1)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.1)] bg-white text-blue-600 hover:text-blue-500 box-border mt-2 ml-[10px] p-2 w-[130px] rounded-md font-semibold  transition-all ease-in-out duration-500' >Swap</button>
                     </div>
                 </div>
             </div>
