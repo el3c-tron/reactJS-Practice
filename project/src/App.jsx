@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import BackgroundColor from "./components/BackgroundColor.jsx";
 import CurrencyConverter from "./components/CurrencyConverter.jsx";
 import RandomPasswordGenerator from "./components/RandomPasswordGenerator.jsx";
-import ThemeChanger from "./components/subComponents/ThemeChanger.jsx";
+import ThemeChanger from "./components/ThemeChanger.jsx";
+import TodoManager from "./components/TodoManager.jsx";
+
 import { ThemeProvider } from "./contexts/Theme.js";
 
 
@@ -27,14 +29,15 @@ function App() {
   return (
     <ThemeProvider value={{themeMode, lightMode, darkMode}}>
       
-      <div className="dark:bg-[#121212] dark:text-white flex justify-center items-center w-auto h-screen p-2 flex-col ">
+      <div className="dark:bg-[#121212] dark:text-white flex justify-center items-center w-auto h-auto p-2 flex-col ">
         
         <BackgroundColor/>
         <RandomPasswordGenerator />
         <CurrencyConverter />
         <ThemeChanger />
+        <TodoManager />
 
-      </div>
+      </div>               
       
     </ThemeProvider>
   )
