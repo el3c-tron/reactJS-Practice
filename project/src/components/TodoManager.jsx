@@ -59,7 +59,7 @@ function TodoManager() {
                     
                     {
                         todos.map((todo) => (
-                          <div key={todo.id} className=' flex justify-between items-center mt-2 mb-2 h-auto w-[89%]'>
+                          <div key={todo.id} className=' flex justify-between items-center mt-2 mb-2 h-auto w-[88%]'>
                             <Todo todo={todo} />
                           </div>
                         ))

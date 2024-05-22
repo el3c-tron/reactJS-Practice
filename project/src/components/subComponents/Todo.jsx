@@ -23,7 +23,7 @@ function Todo({todo}) {
       
       <input 
         type='checkbox'
-        className='mr-2 ml-2 h-[20px] w-[20px]'
+        className='mr-2 ml-2 h-[20px] w-[20px] cursor-pointer'
         onChange={toggleChecked}
         checked={todo.completed}
       />
